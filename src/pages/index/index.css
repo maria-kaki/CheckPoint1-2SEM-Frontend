@@ -1,0 +1,151 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+nav{
+    display: flex;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+nav button{
+    background: none;
+    cursor: pointer;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.search{
+    border-radius: 100%;
+    background-color: rgb(255, 57, 90);
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hospedes{
+    color: gray;
+}
+
+.btn-anuncie-o-seu,.btn-globinho,.btn-logo{
+    font-size: 1rem;
+    border: none;
+}
+
+.btn-search{
+    gap: 20px;
+    font-size: 0.8rem;
+    height: 3rem;
+}
+
+.linha{
+    border-left: 1px solid #000;
+    height: 30px;
+}
+
+.nav-right{
+    display: flex;
+    gap: 1rem;
+}
+
+.perfil{
+    height: 3rem;
+    gap: 5px;
+    color: rgb(92, 92, 92);
+}
+
+.perfil svg{
+    max-height: 2rem;
+}
+
+.perfil img{
+    max-height: 2rem;
+}
+
+.linha-bottom{
+    border-bottom: 1.5px solid rgb(231, 231, 231);
+    width: 100%;
+}
+
+.container{
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-top: 1rem;
+}
+
+.box-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-title h1{
+    font-size: 1.5rem;
+}
+
+.interactions{
+    display: flex;
+    gap: 10px;
+}
+
+.btn{
+    margin-left: 20px;
+}
+
+.btn button{
+    font-size: 1rem;
+    color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    padding: 1rem;
+    text-decoration: underline;
+    background: none;
+    border: none;
+}
+
+.photos{
+    display: grid;
+    grid-template-rows: 180px 180px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.photos div{
+    width: 100%;
+    height: 100%;
+}
+
+.photos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img1{
+    grid-area: span 2 / span 2;
+}
+
+.img1 img{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.img3 img{
+    border-top-right-radius: 15px;
+}
+
+.img5 img{
+    border-bottom-right-radius: 15px;
+}
