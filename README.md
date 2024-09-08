@@ -1,6 +1,7 @@
 # CheckPoint 1 - 2º Semestre
-
-Aluna: Maria Clara de Oliveira Souza 1ESPX
+### Alunos:
+Maria Clara de Oliveira Souza 1ESPX
+Lorran dos Santos 1ESPX
 
 # Considerações
 
