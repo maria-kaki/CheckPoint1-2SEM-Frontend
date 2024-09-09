@@ -6,6 +6,11 @@ nav{
     justify-content: space-between;
 }
 
+main{
+    align-items: center;
+    justify-content: center;
+}
+
 .nav-logo{
     padding: 0;
 }
@@ -89,7 +94,6 @@ nav button{
 
 .box-title h1{
     font-size: 1.5rem;
-    font-style:inherit;
 }
 
 .interactions{
@@ -150,10 +154,11 @@ nav button{
 
 .descricao-lugar{
     margin-top: 2rem;
+    display: flex;
 }
 
-.descricao-lugar h1{
-    font-size: 1rem;
+.titulo-lugar h1{
+    font-size: 1.4rem;
 }
 
 .text-quarto::before{
@@ -165,7 +170,341 @@ nav button{
     content: "•";
     margin: 0 4px;
 }
+
 .text-banheiro::before{
     content: "•";
     margin: 0 4px;
+}
+
+.selo-airbnb{
+    display: flex;
+    font-size: 1rem;
+    gap: 1px;
+    width: 14rem;
+}
+
+.selo-airbnb img{
+    height: 2.4rem;
+}
+
+.text-selo-airbnb{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0.3rem;
+}
+
+.text-acomodacao{
+    width: 18rem;
+}
+
+.preferido-dos-hospedes{
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 85%;
+    border: 1px solid #cacaca;
+    border-radius: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.estrelas-avaliacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avaliacoes-descricao-lugar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images-estrelas-avaliacao{
+    display: flex;
+}
+
+.numero{
+    font-size: 1.2rem;
+}
+
+.text-avaliacoes-board{
+    text-decoration: underline;
+}
+
+.valor-datas{
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.valor-data{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0 4px;
+}
+
+.direita-lugar{
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-direita{
+    border-radius: 1rem;
+    border: 1px solid #cacaca;
+    padding: 1rem;
+    align-items: center;
+}
+
+.informacoes-checkin{
+    border-radius: 0.5rem;
+    border: 1px solid #cacaca;
+    cursor: pointer;
+}
+
+.top-checkin{
+    display: flex;
+}
+
+.checkin{
+    border-right: 1px solid #cacaca;
+}
+
+.checkin, .checkout{
+    border-bottom: 1px solid #cacaca;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.titulo-checkin, .titulo-checkout{
+    font-size: 0.4;
+}
+
+.date-checkin, .date-checkout{
+    font-size: 0.8rem;
+}
+
+.hospedes-checkin{
+    padding: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-hospedes-checkin, .titulo-checkout, .titulo-checkin{
+    font-size: 0.6rem;
+}
+
+.button-reservar button{
+    margin-top: 1rem;
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #df2d4d;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.mensagem-cobranca{
+    padding: 1rem;
+    font-size: 0.8rem;
+    align-items: center;
+}
+
+.valor{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+.valor-por-noite, .text-taxa-airbnb{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.linha-bottom-valores{
+    border-bottom: 1.5px solid rgb(206, 206, 206);
+    width: 100%;
+}
+
+.valores-totais{
+    font-weight: bold;
+    padding-top: 1rem;
+}
+
+.denunciar-anuncio{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem 0;
+    text-decoration: underline;
+    color: #6b6b6b;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.anfitriao{
+    padding: 0.2rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.imagem-anfitriao img{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+}
+
+.ano-hospedagem::before{
+    content: "•";
+    margin: 0 4px;
+}
+
+.text-anfitriao span{
+    color: #6b6b6b;
+    font-size: 0.8rem;
+}
+
+.linha-bottom-anfitriao{
+    padding: 0.8rem 0;
+    border-bottom: 1.5px solid rgb(206, 206, 206);
+    width: 90%;
+}
+
+.ranking{
+    display: flex;
+    gap: 2rem;
+    margin: 1rem;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+}
+.ranking h1{
+    font-size: 1rem;
+}
+
+.ranking p{
+    font-size: 0.9rem;
+    color: #6b6b6b;
+}
+
+.acomodacoes img{
+    max-height: 1.5rem;
+}
+
+.espaco{
+    padding: 2rem 0;
+}
+
+.onde-dormir{
+    margin: 2rem 0;
+    cursor: pointer;
+}
+
+.onde-dormir h1, .mais-informacoes-lugar h1, .titulo-calendario h1{
+    font-size: 1.5rem;
+    cursor: auto;
+}
+
+.img-cama img{
+    height: 220px;
+    width: 320px;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+}
+
+.grade{
+    display: flex;
+    gap: 5rem;
+}
+
+.topico{
+    display: flex;
+    margin: 1rem 0;
+    gap: 1rem;
+}
+
+.todas-comodidades{
+    border-radius: 0.5rem;
+    width: 18rem; 
+    height: 3rem;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+.mais-informacoes-lugar button{
+    border: 1px solid #000;
+    background-color: white;
+}
+
+.mais-informacoes-lugar button:hover{
+    background-color: rgb(228, 228, 228);
+}
+
+.titulo-calendario p{
+    font-size: 0.8rem;
+    color: #6b6b6b;
+}
+
+.bottom-calendario{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10%;
+    margin-bottom: 2rem;
+}
+
+.bottom-calendario button{
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    text-decoration: underline;
+}
+
+.bottom-calendario svg{
+    cursor: pointer;
+}
+
+.container-avaliacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.principal-avaliacao{
+    display: flex;
+}
+
+.principal-avaliacao p{
+    font-size: 7rem;
+    font-weight: bold;
+}
+
+.text-preferido{
+    justify-content: center;
+    text-align: center;
+}
+
+.text-preferido h1{
+    font-size: 1.5rem;
+    font-weight:lighter;
+}
+
+.text-preferido p{
+    color: #6b6b6b;
+    max-width: 23rem;
+    justify-content: center;
+}
+
+.cor-top10{
+    color: #000;
 }
