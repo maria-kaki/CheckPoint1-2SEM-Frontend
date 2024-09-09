@@ -472,6 +472,10 @@ nav button{
     cursor: pointer;
 }
 
+.image-calendario{
+    cursor: pointer;
+}
+
 .container-avaliacao{
     display: flex;
     flex-direction: column;
