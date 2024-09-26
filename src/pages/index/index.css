@@ -512,3 +512,13 @@ nav button{
 .cor-top10{
     color: #000;
 }
+
+.carrossel{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card h1{
+    font-size: 0.8rem;
+}
