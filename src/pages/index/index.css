@@ -23,6 +23,8 @@ nav{
 main{
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 nav button{
@@ -75,6 +77,7 @@ nav button{
     height: 1.5rem;
 }
 
+<<<<<<< HEAD
 .btn-search p {
     white-space: nowrap;
     overflow: hidden;
@@ -98,6 +101,12 @@ nav button{
 .btn-anuncie-o-seu,.btn-globinho,.btn-logo{
     font-size: 0.875rem;
     border: none;
+=======
+.linha-vertical{
+    border-left: 1px solid #cacaca;
+    height: 6rem;
+    padding: 2rem;
+>>>>>>> 497fbf7c2b75ebe53d04291894bd99635e780356
 }
 
 .nav-right{
@@ -119,9 +128,13 @@ nav button{
 }
 
 .linha-bottom{
-    border-bottom: 1.5px solid rgb(231, 231, 231);
+    border-bottom: 1.5px solid rgb(177, 177, 177);
     width: 100%;
+<<<<<<< HEAD
     margin: 0;
+=======
+    padding: 1rem;
+>>>>>>> 497fbf7c2b75ebe53d04291894bd99635e780356
 }
 
 .container{
@@ -627,9 +640,190 @@ nav button{
 .carrossel{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .card h1{
     font-size: 0.8rem;
+}
+
+.card svg{
+    padding: 1rem 0;
+}
+
+.comentario img, .thiago img, .karl img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.stars-comments{
+    display: flex;
+    align-items: center;
+}
+
+.subtitle-comments::before{
+    content: "•";
+    margin: 0 4px;
+}
+
+.cor-noites{
+    color: #6b6b6b;
+}
+
+.pessoa-comments{
+    display: flex;
+    gap: 1rem;
+}
+
+.text-comments-direita h1{
+    font-size: 1rem;
+}
+
+.text-comments-direita h2{
+    font-size: 0.8rem;
+}
+
+.comments{
+    display: flex;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.comentario{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.button-comments button{
+    background: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    border: 1px solid #000;
+    width: 28rem;
+}
+
+.button-comments{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.8rem;
+}
+
+.button-comments a{
+    color: #6b6b6b;
+}
+
+.onde-estara{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.onde-estudei, .meu-trabalho{
+    display: flex;
+    gap: 1rem;
+}
+
+.mostrar-mais{
+    color: #000;
+}
+
+.coanfitrioes{
+    display: flex;
+    gap: 1.2rem;
+}
+
+.thiago, .karl{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.quem-vai-receber{
+    margin-top: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.esquerda-receber{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 35%;
+}
+
+.esquerda-receber h1{
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: start;
+}
+
+.direita-receber h2{
+    font-size: 1.2rem;
+}
+
+.direita-receber{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 60%;
+}
+
+.direita-receber button{
+    background-color: #222;
+    width: 50%;
+    padding: 0.5rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.direita-receber button:hover{
+    background-color: #000;
+}
+
+.proteger-pagamento{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 0.7rem;
+}
+
+.o-que-deve-saber{
+    justify-content: center;
+    display: flex;
+    gap: 8rem;
+    margin-top: 2rem;
+}
+
+.informacoes-finais{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.informacoes-finais h2{
+    font-size: 1rem;
+}
+
+.regras{
+    width: 30%;
+}
+
+.regras h1{
+    font-size: 1.2rem;
+}
+
+.seguranca, .politica-cancelamento{
+    margin-top: 4rem;
+    max-width: 30%;
 }
