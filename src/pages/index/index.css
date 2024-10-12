@@ -9,6 +9,8 @@ nav{
 main{
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .nav-logo{
@@ -55,6 +57,12 @@ nav button{
 .linha{
     border-left: 1px solid #cacaca;
     height: 1.5rem;
+}
+
+.linha-vertical{
+    border-left: 1px solid #cacaca;
+    height: 6rem;
+    padding: 2rem;
 }
 
 .nav-right{
@@ -516,9 +524,79 @@ nav button{
 .carrossel{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .card h1{
     font-size: 0.8rem;
+}
+
+.card svg{
+    padding: 1rem 0;
+}
+
+.comentario img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.stars-comments{
+    display: flex;
+    align-items: center;
+}
+
+.subtitle-comments::before{
+    content: "•";
+    margin: 0 4px;
+}
+
+.cor-noites{
+    color: #6b6b6b;
+}
+
+.pessoa-comments{
+    display: flex;
+    gap: 1rem;
+}
+
+.text-comments-direita h1{
+    font-size: 1rem;
+}
+
+.text-comments-direita h2{
+    font-size: 0.8rem;
+}
+
+.comments{
+    display: flex;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.comentario{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.button-comments button{
+    background: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    border: 1px solid #000;
+    width: 28rem;
+}
+
+.button-comments{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.8rem;
+}
+
+.button-comments a{
+    color: #6b6b6b;
 }
