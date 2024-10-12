@@ -86,6 +86,7 @@ nav button{
 .linha-bottom{
     border-bottom: 1.5px solid rgb(231, 231, 231);
     width: 100%;
+    padding: 1rem;
 }
 
 .container{
@@ -599,4 +600,11 @@ nav button{
 
 .button-comments a{
     color: #6b6b6b;
+}
+
+.onde-estara{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
 }
