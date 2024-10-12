@@ -147,19 +147,20 @@ nav button{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1.5rem 0;
 }
 
 .box-title h1{
-    font-size: 1.5rem;
+    font-size: 1.625rem;
+    font-weight: 500;
 }
 
 .interactions{
     display: flex;
-    gap: 5px;
 }
 
 .btn button{
-    font-size: 1rem;
+    font-size: 0.875rem;
     color: #222;
     display: flex;
     align-items: center;
@@ -167,7 +168,7 @@ nav button{
     gap: 3px;
     border-radius: 0.7rem;
     cursor: pointer;
-    padding: 1rem;
+    padding: 0.5rem;
     text-decoration: underline;
     background: none;
     border: none;
@@ -175,10 +176,15 @@ nav button{
 
 .photos{
     display: grid;
-    grid-template-rows: 243.69px 243.69px;
+    grid-template-rows: 230px 230px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 10px;
     gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .photos{
+        grid-template-rows: 172px 172px;
+    }
 }
 
 .photos div{
@@ -222,7 +228,7 @@ nav button{
 }
 
 .titulo-lugar h1{
-    font-size: 1.4rem;
+    font-size: 1.375rem;
 }
 
 .text-quarto::before{
@@ -242,6 +248,7 @@ nav button{
 
 .selo-airbnb{
     display: flex;
+    align-items: center;
     font-size: 1rem;
     gap: 1px;
     width: 14rem;
@@ -252,14 +259,21 @@ nav button{
 }
 
 .text-selo-airbnb{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
+    line-height: 15px;
     margin: 0 0.3rem;
 }
 
 .text-acomodacao{
     width: 18rem;
+    text-align: start;
+    line-height: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+    .text-acomodacao{
+        display: none;
+    }
 }
 
 .preferido-dos-hospedes{
@@ -271,8 +285,14 @@ nav button{
     width: 85%;
     border: 1px solid #cacaca;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 1.375rem 1.625rem;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1024px){
+    .preferido-dos-hospedes{
+        padding: 1.25rem;
+    }
 }
 
 .estrelas-avaliacao{
@@ -285,6 +305,7 @@ nav button{
     display: flex;
     flex-direction: column;
     align-items: center;
+    line-height: 15px;
 }
 
 .images-estrelas-avaliacao{
@@ -292,11 +313,13 @@ nav button{
 }
 
 .numero{
-    font-size: 1.2rem;
+    font-size: 1.125rem;
+    font-weight: 500;
 }
 
 .text-avaliacoes-board{
     text-decoration: underline;
+    font-size: 0.75rem;
 }
 
 .valor-datas{
@@ -378,7 +401,7 @@ nav button{
 .mensagem-cobranca{
     padding: 1rem;
     font-size: 0.8rem;
-    align-items: center;
+    text-align: center;
 }
 
 .valor{
@@ -456,7 +479,7 @@ nav button{
 }
 
 .ranking p{
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     color: #6b6b6b;
 }
 
@@ -474,7 +497,7 @@ nav button{
 }
 
 .onde-dormir h1, .mais-informacoes-lugar h1, .titulo-calendario h1{
-    font-size: 1.5rem;
+    font-size: 1.375rem;
     cursor: auto;
 }
 
@@ -488,6 +511,13 @@ nav button{
 .grade{
     display: flex;
     gap: 5rem;
+}
+
+@media screen and (max-width: 1024px){
+    .grade{
+        flex-direction: column;
+        gap: 0;
+    }
 }
 
 .topico{
@@ -540,6 +570,14 @@ nav button{
     cursor: pointer;
 }
 
+@media screen and (max-width: 1024px) {
+    .image-calendario img {
+        content: url('/public/assets/images/calendario-mobile.png');
+        width: 80%;
+        height: auto;
+    }
+}
+
 .container-avaliacao{
     display: flex;
     flex-direction: column;
@@ -553,7 +591,7 @@ nav button{
 }
 
 .principal-avaliacao p{
-    font-size: 7rem;
+    font-size: 6.25rem;
     font-weight: bold;
 }
 
@@ -563,14 +601,23 @@ nav button{
 }
 
 .text-preferido h1{
-    font-size: 1.5rem;
+    font-size: 1.375rem;
     font-weight:lighter;
 }
 
 .text-preferido p{
     color: #6b6b6b;
-    max-width: 23rem;
+    max-width: 30rem;
     justify-content: center;
+    font-size: 1.125rem;
+}
+
+@media screen and (max-width: 1024px){
+    .text-preferido p{
+        font-size: 0.875rem;
+        max-width: 20rem;
+    }
+
 }
 
 .cor-top10{
