@@ -1,9 +1,23 @@
 nav{
     display: flex;
-    margin-left: 8%;
-    margin-right: 8%;
     margin-top: 1rem;
+    margin-bottom: 1rem;
     justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 1440px)  {
+    nav{
+        padding: 0 10rem;
+
+    }
+}
+
+@media screen and (max-width: 1024px)  {
+    nav{
+        padding: 0 2.25rem;
+
+    }
 }
 
 main{
@@ -11,17 +25,20 @@ main{
     justify-content: center;
 }
 
-.nav-logo{
-    padding: 0;
-}
-
 nav button{
     background: none;
     cursor: pointer;
-    border-radius: 2rem;
+    border-radius: 2.25rem;
     display: flex;
     align-items: center;
-    padding: 0.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .btn-logo img {
+        content: url('/public/assets/images/icon-airbnb-mobile.svg');
+        width: 2rem;
+        height: auto;
+    }
 }
 
 .search{
@@ -35,13 +52,12 @@ nav button{
     color: white;
 }
 
-.hospedes{
-    color: gray;
+.search svg{
+    padding: 2rem;
 }
 
-.btn-anuncie-o-seu,.btn-globinho,.btn-logo{
-    font-size: 1rem;
-    border: none;
+.hospedes{
+    color: gray;
 }
 
 .btn-search{
@@ -49,12 +65,39 @@ nav button{
     font-size: 0.8rem;
     height: 3rem;
     padding-left: 1.5rem;
+    padding-right: 0.5rem;
     border: 1px solid #cacaca;
 }
+
 
 .linha{
     border-left: 1px solid #cacaca;
     height: 1.5rem;
+}
+
+.btn-search p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 120px;
+}
+
+@media screen and (max-width: 1024px) {
+    .btn-search p {
+        max-width: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btn-search p {
+        max-width: 40px;
+    }
+}
+
+
+.btn-anuncie-o-seu,.btn-globinho,.btn-logo{
+    font-size: 0.875rem;
+    border: none;
 }
 
 .nav-right{
@@ -78,13 +121,27 @@ nav button{
 .linha-bottom{
     border-bottom: 1.5px solid rgb(231, 231, 231);
     width: 100%;
+    margin: 0;
 }
 
 .container{
-    margin-left: 8%;
-    margin-right: 8%;
-    padding-top: 1rem;
+    box-sizing: border-box;
 }
+
+@media screen and (max-width: 1440px)  {
+    .container{
+        padding: 0 10rem;
+
+    }
+}
+
+@media screen and (max-width: 1024px)  {
+    .container{
+        padding: 0 2.25rem;
+
+    }
+}
+
 
 .box-title{
     display: flex;
@@ -118,7 +175,7 @@ nav button{
 
 .photos{
     display: grid;
-    grid-template-rows: 180px 180px;
+    grid-template-rows: 243.69px 243.69px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 10px;
     gap: 10px;
@@ -153,8 +210,15 @@ nav button{
 }
 
 .descricao-lugar{
+    width: 100%;
+    box-sizing: border-box;
     margin-top: 2rem;
     display: flex;
+    justify-content: space-between;
+}
+
+.esquerda-lugar{
+    width: 60%;
 }
 
 .titulo-lugar h1{
@@ -256,7 +320,7 @@ nav button{
 .container-direita{
     border-radius: 1rem;
     border: 1px solid #cacaca;
-    padding: 1rem;
+    padding: 1.5rem;
     align-items: center;
 }
 
