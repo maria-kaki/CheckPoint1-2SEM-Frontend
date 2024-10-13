@@ -1,4 +1,4 @@
-nav{
+.navBar-desktop{
     display: flex;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -7,21 +7,21 @@ nav{
 }
 
 @media screen and (max-width: 1440px)  {
-    nav{
+    .navBar-desktop{
         padding: 0 10rem;
 
     }
 }
 
 @media screen and (max-width: 1024px)  {
-    nav{
+    .navBar-desktop{
         padding: 0 2.25rem;
 
     }
 }
 
-@media screen and (max-width: 739px) {
-    nav{
+@media screen and (max-width: 768px) {
+    .navBar-desktop{
         display: none;
     }
 }
@@ -54,7 +54,7 @@ nav{
     padding: 0.10rem 0.75rem;
     text-align: center;
 }
-@media screen and (min-width: 767px){
+@media screen and (min-width: 768px){
     .navBar-mobile {
         display: none;
     }
@@ -179,7 +179,12 @@ nav button{
 @media screen and (max-width: 1024px)  {
     .container{
         padding: 0 2.25rem;
+    }
+}
 
+@media screen and (max-width: 768px)  {
+    .container{
+        padding: 0;
     }
 }
 
@@ -228,9 +233,7 @@ header{
     .interactions{
         display: none;
     }
-    
 }
-
 
 .photos{
     display: grid;
@@ -273,6 +276,25 @@ header{
     border-bottom-right-radius: 0.8rem;
 }
 
+@media screen and (max-width: 739px){
+    .photos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .img1{
+        grid-area: auto;
+    }
+
+    .img1 img{
+        border-radius: 0;
+    }
+
+    .img2, .img3, .img4, .img5{
+        display: none;
+    }
+}
+
 .descricao-lugar{
     width: 100%;
     box-sizing: border-box;
@@ -287,6 +309,13 @@ header{
 
 .titulo-lugar h1{
     font-size: 1.375rem;
+}
+
+@media screen and (max-width: 768px) {
+    .titulo-lugar h1 {
+        font-size: 1rem;
+    }
+    
 }
 
 .text-quarto::before{
@@ -767,13 +796,6 @@ header{
     margin: 2.5rem 0;
 }
 
-@media screen and (max-width: 768px) {
-    .comments{
-        flex-direction: column-reverse;
-    }
-    
-}
-
 .comentario{
     display: flex;
     flex-direction: column;
@@ -799,6 +821,16 @@ header{
 
 .button-comments a{
     color: #6b6b6b;
+}
+
+@media screen and (max-width: 768px) {
+    .comments{
+        display: none;
+    }
+
+    .linha-comments{
+        display: none;
+    }
 }
 
 .onde-estara{
@@ -945,6 +977,74 @@ header{
     font-size: 1.2rem;
 }
 
-.seguranca, .politica-cancelamento{
+@media screen and (max-width: 768px) {
+    .o-que-deve-saber h1{
+        display: none;
+    }
 
+    .o-que-deve-saber .content{
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .informacoes-finais{
+        width: 100%;
+        gap: 0.5rem
+    }
+
+    .informacoes-finais p{
+        font-size: 0.875rem;
+    }
+
+    .informacoes-finais h2{
+        font-size: 1.375rem;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .reservar-fixo {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 83%;
+        background-color: white;
+        padding: 1rem 2rem;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .reservar-fixo .info-preco {
+        font-size: 0.875rem;
+        color: black;
+    }
+
+    .reservar-fixo .info-preco span {
+        font-weight: bold;
+        display: block;
+    }
+
+    .reservar-fixo .btn-reservar {
+        background-color: #df2d4d;
+        color: white;
+        padding: 0.75rem 2.5rem;
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        cursor: pointer;
+        
+    }
+
+    .reservar-fixo .btn-reservar:hover {
+        background-color: #c0213a;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .reservar-fixo {
+        display: none;
+    }
 }
