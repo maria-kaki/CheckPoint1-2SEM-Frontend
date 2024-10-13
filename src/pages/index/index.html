@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/public/assets/images/icon-airbnb-mobile.svg" type="image/x-icon">
+
     <title>Colina das Aves - Chalé Bem-te-vi</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="/public/css/fonts.css">
     <link rel="stylesheet" href="/public/css/global.css">
 </head>
 <body>
-    <nav>
+    <nav class="navBar-desktop">
         <button class="btn-logo">
             <img src="/public/assets/images/logo.png" alt="Logo Airbnb">
         </button>
@@ -36,6 +40,43 @@
             </button>
         </div>
     </nav>
+
+    <nav class="navBar-mobile">
+        <div class="content">
+            <div class="esquerda-content">
+                <div class="btn-close">
+                    <p>X</p>
+                </div>
+                <img src="/public/assets/images/use-app-mobile.png" alt="Use o Aplicativo">
+            </div>
+            <div class="direita-content">
+                <button class="btn-open">
+                    ABRIR
+                </button>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="acomodacoes-header">
+        <div class="acomodacoes-esquerda">
+            <a href="#" class="back-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M15 19l-7-7 7-7" fill="none" stroke="#000" stroke-width="2"/>
+                </svg>
+            </a>
+            <h2>Acomodações</h2>
+        </div>
+        <div class="header-icons">
+            <a href="#" class="share-icon">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 2; overflow: visible;"><path d="m27 18v9c0 1.1046-.8954 2-2 2h-18c-1.10457 0-2-.8954-2-2v-9m11-15v21m-10-11 9.2929-9.29289c.3905-.39053 1.0237-.39053 1.4142 0l9.2929 9.29289" fill="none"></path></svg> 
+            </a>
+            <a href="#" class="favorite-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 2; overflow: visible;"><path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path></svg>
+            </a>
+        </div>
+    </div>
+
     <div class="linha-bottom"></div>
     <div class="container">
         <header>
@@ -114,7 +155,7 @@
                             </div>
                         </div>
                         <div class="avaliacoes-descricao-lugar">
-                            <p class="numero">150</p>
+                            <p class="numero">154</p>
                             <p class="text-avaliacoes-board">avaliações</p>
                         </div>
                     </div>
@@ -314,6 +355,13 @@
                     <h1>Preferido dos hóspedes</h1>
                     <p>Esta acomodação está no <span class="cor-top10">top 10%</span> dos anúncios elegíveis, baseado em avaliações, comentários e confiabilidade</p>
                 </div>
+                <div class="image-mobile-comments">
+                    <img src="/public/assets/images/comments-mobile.png" alt="comentários Mobile">
+                </div>
+                <button class="todas-comodidades btn-comments">
+                    Mostrar todos os 154 comentários
+                </button>
+                <a href="#" class="avaliacoes-link">Saiba como funcionam as avaliações</a>
             </div>
             <div class="carrossel">
                 <div class="card card1">
@@ -357,6 +405,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 32px; width: 32px; fill: currentcolor;"><path d="M16.17 2a3 3 0 0 1 1.98.74l.14.14 11 11a3 3 0 0 1 .14 4.1l-.14.14L18.12 29.3a3 3 0 0 1-4.1.14l-.14-.14-11-11A3 3 0 0 1 2 16.37l-.01-.2V5a3 3 0 0 1 2.82-3h11.35zm0 2H5a1 1 0 0 0-1 .88v11.29a1 1 0 0 0 .2.61l.1.1 11 11a1 1 0 0 0 1.31.08l.1-.08L27.88 16.7a1 1 0 0 0 .08-1.32l-.08-.1-11-11a1 1 0 0 0-.58-.28L16.17 4zM9 6a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path></svg>
                 </div>
             </div>
+            <div class="linha-bottom"></div>
             <div class="comments" id="comments">
                 <div class="comentario esquerda-comentarios">
                     <div class="person person1-comments">
@@ -482,7 +531,7 @@
                     </div>
                 </div>
             </div>
-            <div class="linha-bottom"></div>
+            <div class="linha-bottom linha-comments"></div>
             <div class="onde-estara">
                 <h1>Onde você estará</h1>
                 <p>Loteamento Veu da Noiva, São Paulo, Brasil</p>
@@ -531,28 +580,100 @@
             </div>
             <div class="linha-bottom"></div>
             <div class="o-que-deve-saber">
-                <div class="informacoes-finais regras">
-                    <h1>O que você deve saber</h1>
-                    <h2>Regras da casa</h2>
-                    <p>Check-in após 16:00</p>
-                    <p>Checkout antes das 14:00</p>
-                    <p>Máximo de 2 hóspedes</p>
-                    <a class="mostrar-mais" href="#receber">Mostrar mais ></a>
-                </div>
-                <div class="informacoes-finais seguranca">
-                    <h2>Segurança e propriedade</h2>
-                    <p>Alarme de monóxido de carbono não informado</p>
-                    <p>Detector de fumaça não informado</p>
-                    <a class="mostrar-mais" href="#receber">Mostrar mais ></a>
-                </div>
-                <div class="informacoes-finais politica-cancelamento">
-                    <h2>Política de cancelamento</h2>
-                    <p>Cancelamento gratuito antes de 5 de nov.. Se você cancelar antes do check-in em 10 de nov., receberá um reembolso parcial.</p>
-                    <p>Consulte a política completa deste anfitrião para saber mais.</p>
-                    <a class="mostrar-mais" href="#receber">Mostrar mais ></a>
+                <h1>O que você deve saber</h1>
+                <div class="content">
+                    <div class="informacoes-finais regras">
+                        <h2>Regras da casa</h2>
+                        <p>Check-in após 16:00</p>
+                        <p>Checkout antes das 14:00</p>
+                        <p>Máximo de 2 hóspedes</p>
+                        <a class="mostrar-mais" href="#receber">Ver mais ></a>
+                    </div>
+                    <div class="informacoes-finais seguranca">
+                        <h2>Segurança e propriedade</h2>
+                        <p>Alarme de monóxido de carbono não informado</p>
+                        <p>Detector de fumaça não informado</p>
+                        <a class="mostrar-mais" href="#receber">Ver mais ></a>
+                    </div>
+                    <div class="informacoes-finais politica-cancelamento">
+                        <h2>Política de cancelamento</h2>
+                        <p>Cancelamento gratuito antes de 5 de nov.. Se você cancelar antes do check-in em 10 de nov., receberá um reembolso parcial.</p>
+                        <p>Consulte a política completa deste anfitrião para saber mais.</p>
+                        <a class="mostrar-mais" href="#receber">Ver mais ></a>
+                    </div>
                 </div>
             </div>
         </main>
+        <div class="reservar-fixo">
+            <div class="info-preco">
+                <span>R$617/noite</span>
+                10 – 16 de nov.
+            </div>
+            <button class="btn-reservar">Reservar</button>
+        </div>
+        
     </div>
+    <footer class="footer">
+        <div class="footer-top">
+            <nav class="breadcrumb">
+                <a href="#">Airbnb</a> >
+                <a href="#">Brasil</a> >
+                <a href="#">Costa Verde</a>
+            </nav>
+        </div>
+    
+        <div class="footer-middle">
+            <div class="footer-column">
+                <h4>Atendimento</h4>
+                <ul>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">AirCover</a></li>
+                    <li><a href="#">Antidiscriminação</a></li>
+                    <li><a href="#">Apoio à pessoa com deficiência</a></li>
+                    <li><a href="#">Opções de cancelamento</a></li>
+                    <li><a href="#">Reporte um problema no bairro</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Hospedagem</h4>
+                <ul>
+                    <li><a href="#">Anuncie seu espaço no Airbnb</a></li>
+                    <li><a href="#">AirCover para anfitriões</a></li>
+                    <li><a href="#">Recursos para anfitriões</a></li>
+                    <li><a href="#">Fórum da comunidade</a></li>
+                    <li><a href="#">Hospedagem responsável</a></li>
+                    <li><a href="#">Participe de uma aula gratuita de hospedagem</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Airbnb</h4>
+                <ul>
+                    <li><a href="#">Newsroom</a></li>
+                    <li><a href="#">Novos recursos</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                    <li><a href="#">Investidores</a></li>
+                    <li><a href="#">Locais emergenciais Airbnb.org</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <div class="footer-social">
+                <a href="#"><i class="fas fa-globe"></i> Português (BR)</a> · 
+                <a href="#"><i class="fas fa-dollar-sign"></i> R$ BRL</a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>© 2024 Airbnb, Inc.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacidade</a></li>
+                <li><a href="#">Termos</a></li>
+                <li><a href="#">Mapa do site</a></li>
+                <li><a href="#">Informações da empresa</a></li>
+            </ul>
+        </div>
+    </footer>    
+    
 </body>
 </html>

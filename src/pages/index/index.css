@@ -1,9 +1,115 @@
-nav{
+.navBar-desktop{
     display: flex;
-    margin-left: 8%;
-    margin-right: 8%;
     margin-top: 1rem;
+    margin-bottom: 1rem;
     justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 1440px)  {
+    .navBar-desktop{
+        padding: 0 10rem;
+
+    }
+}
+
+@media screen and (max-width: 1024px)  {
+    .navBar-desktop{
+        padding: 0 2.25rem;
+
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .navBar-desktop{
+        display: none;
+    }
+}
+
+.navBar-mobile{
+    display: block;
+}
+
+.navBar-mobile .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navBar-mobile .esquerda-content{
+    display: flex;
+    align-items: center;
+}
+
+.acomodacoes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.acomodacoes-esquerda{
+    display: flex;
+    align-items: center;
+}
+
+.acomodacoes-header h2 {
+    font-size: 0.875rem;
+    font-weight: normal;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.header-icons a {
+    margin-left: 1.5rem;
+}
+
+.back-icon svg, .share-icon svg, .favorite-icon svg {
+    width: 1rem;
+    height: auto;
+    color: #000;
+    fill: none;
+    cursor: pointer;
+}
+
+.back-icon:hover svg, .share-icon:hover svg, .favorite-icon:hover svg {
+    stroke: #555;
+}
+
+@media screen and (max-width: 739px) {
+    .acomodacoes-header {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 740px) {
+    .acomodacoes-header {
+        display: none;
+    }
+}
+
+.esquerda-content .btn-close{
+    font-size: 0.8rem;
+    padding: 0.7rem;
+}
+
+.direita-content .btn-open{
+    font-size: 1rem;
+    background-color: rgb(0, 110, 255);
+    color: white;
+    border: 0;
+    padding: 0.10rem 0.75rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 749px){
+    .navBar-mobile {
+        display: none;
+    }
 }
 
 main{
@@ -13,17 +119,26 @@ main{
     flex-direction: column;
 }
 
-.nav-logo{
-    padding: 0;
+@media screen and (max-width: 768px)  {
+    main{
+        padding: 0 1.5rem;
+    }
 }
 
 nav button{
     background: none;
     cursor: pointer;
-    border-radius: 2rem;
+    border-radius: 2.25rem;
     display: flex;
     align-items: center;
-    padding: 0.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .btn-logo img {
+        content: url('/public/assets/images/icon-airbnb-mobile.svg');
+        width: 2rem;
+        height: auto;
+    }
 }
 
 .search{
@@ -37,13 +152,12 @@ nav button{
     color: white;
 }
 
-.hospedes{
-    color: gray;
+.search svg{
+    padding: 2rem;
 }
 
-.btn-anuncie-o-seu,.btn-globinho,.btn-logo{
-    font-size: 1rem;
-    border: none;
+.hospedes{
+    color: gray;
 }
 
 .btn-search{
@@ -51,18 +165,38 @@ nav button{
     font-size: 0.8rem;
     height: 3rem;
     padding-left: 1.5rem;
+    padding-right: 0.5rem;
     border: 1px solid #cacaca;
 }
+
 
 .linha{
     border-left: 1px solid #cacaca;
     height: 1.5rem;
 }
 
-.linha-vertical{
-    border-left: 1px solid #cacaca;
-    height: 6rem;
-    padding: 2rem;
+.btn-search p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 120px;
+}
+
+@media screen and (max-width: 1024px) {
+    .btn-search p {
+        max-width: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btn-search p {
+        max-width: 40px;
+    }
+}
+
+.btn-anuncie-o-seu,.btn-globinho,.btn-logo{
+    font-size: 0.875rem;
+    border: none;
 }
 
 .nav-right{
@@ -86,32 +220,60 @@ nav button{
 .linha-bottom{
     border-bottom: 1.5px solid rgb(177, 177, 177);
     width: 100%;
-    padding: 1rem;
+    margin: 0;
 }
 
 .container{
-    margin-left: 8%;
-    margin-right: 8%;
-    padding-top: 1rem;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1440px)  {
+    .container{
+        padding: 0 10rem;
+
+    }
+}
+
+@media screen and (max-width: 1024px)  {
+    .container{
+        padding: 0 2.5rem;
+    }
+}
+
+@media screen and (max-width: 768px)  {
+    .container{
+        padding: 0;
+    }
 }
 
 .box-title{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1.5rem 0;
 }
 
 .box-title h1{
-    font-size: 1.5rem;
+    font-size: 1.625rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px){
+    .box-title{
+        padding: 1.5rem 0 0 0;
+    }
+
+    .box-title h1{
+        padding: 0 1.5rem;
+    }
 }
 
 .interactions{
     display: flex;
-    gap: 5px;
 }
 
 .btn button{
-    font-size: 1rem;
+    font-size: 0.875rem;
     color: #222;
     display: flex;
     align-items: center;
@@ -119,18 +281,39 @@ nav button{
     gap: 3px;
     border-radius: 0.7rem;
     cursor: pointer;
-    padding: 1rem;
+    padding: 0.5rem;
     text-decoration: underline;
     background: none;
     border: none;
 }
 
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 739px){
+    header{
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .interactions{
+        display: none;
+    }
+}
+
 .photos{
     display: grid;
-    grid-template-rows: 180px 180px;
+    grid-template-rows: 230px 230px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 10px;
     gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .photos{
+        grid-template-rows: 172px 172px;
+    }
 }
 
 .photos div{
@@ -161,13 +344,46 @@ nav button{
     border-bottom-right-radius: 0.8rem;
 }
 
+@media screen and (max-width: 750px){
+    .photos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .img1{
+        grid-area: auto;
+    }
+
+    .img1 img{
+        border-radius: 0;
+    }
+
+    .img2, .img3, .img4, .img5{
+        display: none;
+    }
+}
+
 .descricao-lugar{
+    width: 100%;
+    box-sizing: border-box;
     margin-top: 2rem;
     display: flex;
+    justify-content: space-between;
+}
+
+.esquerda-lugar{
+    width: 60%;
 }
 
 .titulo-lugar h1{
-    font-size: 1.4rem;
+    font-size: 1.375rem;
+}
+
+@media screen and (max-width: 768px) {
+    .titulo-lugar h1 {
+        font-size: 1rem;
+    }
+    
 }
 
 .text-quarto::before{
@@ -185,8 +401,16 @@ nav button{
     margin: 0 4px;
 }
 
+@media screen and (max-width: 768px){
+    .titulo-lugar p {
+        font-size: 0.875rem;
+    }
+}
+
+
 .selo-airbnb{
     display: flex;
+    align-items: center;
     font-size: 1rem;
     gap: 1px;
     width: 14rem;
@@ -197,14 +421,21 @@ nav button{
 }
 
 .text-selo-airbnb{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
+    line-height: 15px;
     margin: 0 0.3rem;
 }
 
 .text-acomodacao{
     width: 18rem;
+    text-align: start;
+    line-height: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+    .text-acomodacao{
+        display: none;
+    }
 }
 
 .preferido-dos-hospedes{
@@ -216,8 +447,20 @@ nav button{
     width: 85%;
     border: 1px solid #cacaca;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 1.375rem 1.625rem;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1024px){
+    .preferido-dos-hospedes{
+        padding: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .preferido-dos-hospedes{
+        gap: 0.3rem;
+    }
 }
 
 .estrelas-avaliacao{
@@ -230,6 +473,7 @@ nav button{
     display: flex;
     flex-direction: column;
     align-items: center;
+    line-height: 15px;
 }
 
 .images-estrelas-avaliacao{
@@ -237,11 +481,13 @@ nav button{
 }
 
 .numero{
-    font-size: 1.2rem;
+    font-size: 1.125rem;
+    font-weight: 500;
 }
 
 .text-avaliacoes-board{
     text-decoration: underline;
+    font-size: 0.75rem;
 }
 
 .valor-datas{
@@ -265,8 +511,18 @@ nav button{
 .container-direita{
     border-radius: 1rem;
     border: 1px solid #cacaca;
-    padding: 1rem;
+    padding: 1.5rem;
     align-items: center;
+}
+
+@media screen and (max-width: 739px){
+    .container-direita, .direita-lugar{
+        display: none;
+    }
+
+    .esquerda-lugar{
+        width: 100%;
+    }
 }
 
 .informacoes-checkin{
@@ -323,7 +579,7 @@ nav button{
 .mensagem-cobranca{
     padding: 1rem;
     font-size: 0.8rem;
-    align-items: center;
+    text-align: center;
 }
 
 .valor{
@@ -380,10 +636,22 @@ nav button{
     font-size: 0.8rem;
 }
 
+@media screen and (max-width: 768px){
+    .text-anfitriao span{
+        font-size: 0.875rem;
+    }
+}
+
 .linha-bottom-anfitriao{
     padding: 0.8rem 0;
     border-bottom: 1.5px solid rgb(206, 206, 206);
     width: 90%;
+}
+
+@media screen and (max-width: 768px){
+    .linha-bottom-anfitriao{
+        padding: 0;
+    }
 }
 
 .ranking{
@@ -401,7 +669,7 @@ nav button{
 }
 
 .ranking p{
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     color: #6b6b6b;
 }
 
@@ -419,13 +687,13 @@ nav button{
 }
 
 .onde-dormir h1, .mais-informacoes-lugar h1, .titulo-calendario h1{
-    font-size: 1.5rem;
+    font-size: 1.375rem;
     cursor: auto;
 }
 
 .img-cama img{
-    height: 220px;
-    width: 320px;
+    height: auto;
+    width: 50%;
     border-radius: 0.5rem;
     margin: 1rem 0;
 }
@@ -433,6 +701,19 @@ nav button{
 .grade{
     display: flex;
     gap: 5rem;
+}
+
+@media screen and (max-width: 1024px){
+    .grade{
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .onde-dormir .descricao-quarto{
+        font-size: 0.875rem;
+    }
 }
 
 .topico{
@@ -456,6 +737,16 @@ nav button{
 
 .mais-informacoes-lugar button:hover{
     background-color: rgb(228, 228, 228);
+}
+
+@media screen and (max-width: 768px){
+    .mais-informacoes-lugar h1{
+        padding-top: 2rem;
+    }
+
+    .todas-comodidades{
+        width: 100%;
+    }
 }
 
 .titulo-calendario p{
@@ -485,12 +776,33 @@ nav button{
     cursor: pointer;
 }
 
+@media screen and (max-width: 1024px) {
+    .image-calendario img {
+        content: url('/public/assets/images/calendario-mobile.png');
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 739px) {
+    .image-calendario {
+        text-align: center;
+        padding: 1.375rem 0 0 0;
+    }
+}
+
 .container-avaliacao{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 2rem 0;
+    margin: 4rem 0;
+}
+
+@media screen and (max-width: 739px){
+    .container-avaliacao{
+        background-color: #fbf7ed;
+    }
 }
 
 .principal-avaliacao{
@@ -498,8 +810,15 @@ nav button{
 }
 
 .principal-avaliacao p{
-    font-size: 7rem;
+    font-size: 6.25rem;
     font-weight: bold;
+}
+
+@media screen and (max-width: 739px) {
+    .principal-avaliacao p{
+        font-size: 4.5rem;
+    }
+    
 }
 
 .text-preferido{
@@ -508,14 +827,62 @@ nav button{
 }
 
 .text-preferido h1{
-    font-size: 1.5rem;
+    font-size: 1.375rem;
     font-weight:lighter;
 }
 
 .text-preferido p{
     color: #6b6b6b;
-    max-width: 23rem;
+    max-width: 30rem;
     justify-content: center;
+    font-size: 1.125rem;
+}
+
+@media screen and (max-width: 1024px){
+    .text-preferido p{
+        font-size: 0.875rem;
+        max-width: 20rem;
+    }
+
+}
+
+.image-mobile-comments, .btn-comments, .avaliacoes-link{
+    display: none;
+}
+
+@media screen and (max-width: 739px){
+    .btn-comments {
+        display: block;
+        background-color: transparent;
+    }
+
+    .image-mobile-comments{
+        display: block;
+    }
+
+    .image-mobile-comments img{
+        margin-top: 1.5rem;
+        border-radius: 26px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);;
+    }
+
+    .container-avaliacao{
+        padding: 0 1.5rem;
+    }
+
+    .avaliacoes-link {
+        display: block;
+        padding: 2rem 0;
+        font-size: 1rem;
+        color: #6b6b6b;
+        text-decoration: underline;
+        cursor: pointer;
+        font-family: Arial, sans-serif;
+    }
+    
+    .avaliacoes-link:hover {
+        color: #000;
+    }
 }
 
 .cor-top10{
@@ -525,8 +892,23 @@ nav button{
 .carrossel{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 2rem;
+    padding: 0 0 2.5rem;
 }
+
+@media screen and (max-width: 768px){
+    .carrossel{
+        gap: 0.5rem
+    }
+}
+
+@media screen and (max-width: 739px){
+    .carrossel{
+        display: none;
+    }
+}
+
 
 .card h1{
     font-size: 0.8rem;
@@ -572,7 +954,7 @@ nav button{
 .comments{
     display: flex;
     gap: 2rem;
-    margin: 1rem 0;
+    margin: 2.5rem 0;
 }
 
 .comentario{
@@ -602,11 +984,25 @@ nav button{
     color: #6b6b6b;
 }
 
+@media screen and (max-width: 768px) {
+    .comments{
+        display: none;
+    }
+
+    .linha-comments{
+        display: none;
+    }
+}
+
 .onde-estara{
     display: flex;
     flex-direction: column;
     gap: 1rem;
     margin-top: 2rem;
+}
+
+.onde-estara img{
+    width: 100%;
 }
 
 .onde-estudei, .meu-trabalho{
@@ -657,7 +1053,7 @@ nav button{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    max-width: 60%;
+    width: 60%;
 }
 
 .direita-receber button{
@@ -676,24 +1072,58 @@ nav button{
     background-color: #000;
 }
 
+
+
+@media screen and (max-width: 768px){
+    .quem-vai-receber{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .esquerda-receber{
+        width: 100%;
+    }
+
+    .esquerda-receber img{
+        width: 60%;
+    }
+
+    .direita-receber{
+        width: 100%;
+    }
+}
+
 .proteger-pagamento{
     display: flex;
     gap: 1rem;
     align-items: center;
     font-size: 0.7rem;
+    padding: 1.5rem 0 4rem;
 }
 
+
 .o-que-deve-saber{
-    justify-content: center;
     display: flex;
-    gap: 8rem;
+    flex-direction: column;
     margin-top: 2rem;
 }
 
+.o-que-deve-saber h1{
+    padding: 0 0 1.5rem;
+    font-size: 1.375rem;
+}
+
+.o-que-deve-saber .content{
+    display: flex;
+    justify-content: flex-start;
+}
+
 .informacoes-finais{
+    width: 33%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding: 0 0.5rem 0 0;
 }
 
 .informacoes-finais h2{
@@ -708,7 +1138,211 @@ nav button{
     font-size: 1.2rem;
 }
 
-.seguranca, .politica-cancelamento{
-    margin-top: 4rem;
-    max-width: 30%;
+@media screen and (max-width: 768px) {
+    .o-que-deve-saber h1{
+        display: none;
+    }
+
+    .o-que-deve-saber .content{
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .informacoes-finais{
+        width: 100%;
+        gap: 0.5rem
+    }
+
+    .informacoes-finais p{
+        font-size: 0.875rem;
+    }
+
+    .informacoes-finais h2{
+        font-size: 1.375rem;
+    }
+    
+}
+
+.reservar-fixo{
+    display: none;
+}
+
+@media screen and (max-width: 750px) {
+    .reservar-fixo {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 80%;
+        background-color: white;
+        padding: 1rem 2rem;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        margin: 0 auto;
+    }
+
+    .reservar-fixo .info-preco {
+        font-size: 0.875rem;
+        color: black;
+    }
+
+    .reservar-fixo .info-preco span {
+        font-weight: bold;
+        display: block;
+    }
+
+    .reservar-fixo .btn-reservar {
+        background-color: #df2d4d;
+        color: white;
+        padding: 0.75rem 2.5rem;
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        cursor: pointer;
+        
+    }
+
+    .reservar-fixo .btn-reservar:hover {
+        background-color: #c0213a;
+    }
+}
+
+@media screen and (min-width: 751px) {
+    .reservar-fixo {
+        display: none;
+    }
+}
+
+.footer {
+    background-color: #f7f7f7;
+    padding: 2rem 1rem;
+    font-size: 0.875rem;
+    color: #6b6b6b;
+    margin-top: 2rem;
+}
+
+.footer-top {
+    text-align: start;
+    margin-bottom: 2rem;
+}
+
+.breadcrumb a {
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 0 0 1rem;
+}
+
+.footer-middle {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.footer-column h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #6b6b6b;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #e1e1e1;
+    padding-top: 1rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: #6b6b6b;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-social a {
+    color: #6b6b6b;
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+
+.footer-social a:hover {
+    color: #000;
+}
+
+.footer-social i {
+    margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-middle {
+        flex-direction: column;
+        text-align: start;
+    }
+
+    .footer-column {
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 50px;
+        padding: 0 0 0 1rem;
+    }
+
+    .footer-social {
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: start;
+    }
+}
+
+@media screen and (max-width: 739px){
+    .fab{
+        display: none;
+    }
 }
